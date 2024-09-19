@@ -1,4 +1,6 @@
 .cart {
-    background: hwb(0 45% 54% / 0.5);
-    backdrop-filter: blur(5px);
+    background: hsla(0, 0%, 7%, 0.8);
+}
+body {
+    background-color: black;
 }

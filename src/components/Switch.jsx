@@ -1,5 +1,6 @@
 import classNames from "classnames/bind";
 import React, { useState } from "react";
+import { toggle } from "../constants";
 
 const Switch = () => {
   const [isSelect, setIsSelect] = useState(true);
@@ -17,11 +18,11 @@ const Switch = () => {
       >
         <span
           className={classNames("h-2 w-2 mt-[1px] bg-slate-200 rounded-full", {
-            "ml-[10px] bg-white ": isSelect,
+            "ml-[10px] bg-black ": isSelect,
           })}
         />
       </div>
-      <div className="ml-2">Billod Yearly</div>
+      <div className="ml-2">{toggle}</div>
     </div>
   );
 };

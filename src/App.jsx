@@ -8,19 +8,17 @@ import BottomStyle from "./components/BottomStyle";
 
 function App() {
   return (
-    <div className="px-8 h-screen relative m-0 p-0 overflow-hidden">
+    <div className="lg:px-8 h-screen text-white relative m-0 p-0 lg:overflow-hidden">
       <div className="justify-center flex">
         <Heading />
       </div>
       <div className="flex flex-wrap justify-center">
         <Cart />
-        <Cart />
-        <Cart />
       </div>
-      <div className="ml-20 mt-2">
+      <div className="flex justify-center lg:justify-start  ml-20 mt-2 lg:pl-[270px]">
         <Switch />
       </div>
-      <div className="flex justify-center">
+      <div className="flex justify-center lg:mt-28">
         <PlansButton />
       </div>
       <div className="flex justify-center flex-col items-center absolute bottom-0 w-full ">
