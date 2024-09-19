@@ -2,14 +2,13 @@ import React from "react";
 import { cartDesign } from "../constants";
 import { FaCheck } from "react-icons/fa6";
 
-
 const Cart = () => {
   return (
     <div className="flex flex-wrap mt-8 lg:m-1 justify-center">
       {cartDesign.map((item, index) => (
         <div
           key={index}
-          className="cart w-[250px] h-[400px] relative pb-8 backdrop-blur rounded-2xl mx-2"
+          className="cart w-[250px] h-[400px]  my-4 lg:my-0 relative pb-8 backdrop-blur rounded-2xl mx-2"
         >
           <div className="header px-4 py-4">
             <p className="text-sm">{item.cartTitle}</p>
@@ -18,7 +17,10 @@ const Cart = () => {
           <hr />
           <div className="bottom px-4 py-4">
             {item.benefits.map((b, i) => (
-              <p key={i} className="text-[10px] text-stone-400 flex items-center m-4">
+              <p
+                key={i}
+                className="text-[10px] text-stone-400 flex items-center m-4"
+              >
                 <FaCheck className="bg-black mr-2" />
                 {b}
               </p>
